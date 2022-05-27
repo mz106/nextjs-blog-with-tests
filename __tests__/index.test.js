@@ -4,7 +4,7 @@ import Home from '../pages/index';
 
 test('to delete - testing workflows - does Create Next App render', () => {
     render(<Home />);
-    const heading = screen.getByRole('heading', { name: /Welcome to Next.js!/i });
+    const heading = screen.getByRole('heading', { name: /hello world/i });
     expect(heading).toBeInTheDocument();
 });
 
