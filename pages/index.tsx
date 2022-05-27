@@ -1,5 +1,4 @@
 import { Flex } from '@chakra-ui/react';
-import { Layout } from '@/components/_common/layout/Layout'
 
 export default function Page() {
   return (

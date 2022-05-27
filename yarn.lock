@@ -2113,7 +2113,7 @@
     "combined-stream" "^1.0.8"
     "mime-types" "^2.1.12"
 
-"framer-motion@>=4.0.0":
+"framer-motion@^6.3.4", "framer-motion@>=4.0.0":
   "integrity" "sha512-FXHqpY23g0MhznXpAf94SyEmUqfw7KoLaCQqTKrjWZgQzMkjvfOgOVYKUA9Dlmys6XGn0qN+AMzjhFJ1N5bH+A=="
   "resolved" "https://registry.npmjs.org/framer-motion/-/framer-motion-6.3.4.tgz"
   "version" "6.3.4"
