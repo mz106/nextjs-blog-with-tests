@@ -4,7 +4,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest --watch",
+    "devtest": "jest --watch",
+    "test": "jest",
     "test:ci": "jest --ci"
   },
   "dependencies": {
