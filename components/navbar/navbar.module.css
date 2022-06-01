@@ -1,0 +1,22 @@
+.container_nav {
+    padding-top: 5px;
+}
+
+.container_nav_inner {
+    display: flex;
+
+}
+
+.container_logo {
+    border-right: 1px solid black;
+    padding: 0 5px 0 5px;
+}
+
+.nav_list {
+    display: flex;
+    align-items: center;
+    width: 14%;
+    
+    justify-content: space-around;
+}
+

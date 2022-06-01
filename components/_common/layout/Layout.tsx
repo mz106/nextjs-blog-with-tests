@@ -6,16 +6,16 @@ import { Footer } from '@/components/footer/Footer';
 
 export function Layout({ children }: { children: React.ReactNode }) {
     return (
-        <Box h="100vh" w="100vw">
-            <Box zIndex={50} w="100wv">
+        <div>
+            <div>
                 <NavBar />
-            </Box>
-            <Box w="100vw" mt={4}>
+            </div>
+            <div>
                 <main>{children}</main>
-            </Box>
-            <Box zIndex={50} w="100wv">
+            </div>
+            <div>
                 <Footer />
-            </Box>
-        </Box>
+            </div>
+        </div>
     );
 };
