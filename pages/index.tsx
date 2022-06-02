@@ -1,10 +1,12 @@
-import { Flex } from '@chakra-ui/react';
+import Home from '../components/home/Home';
+
+import classes from './index.module.css';
 
 export default function Page() {
   return (
-    <Flex h="65vh" alignItems="center" justify="center">
-      <h1>Hello world</h1>
-    </Flex>
+    <div className={classes.wrapper}>
+      <Home />
+    </div>
   );
 };
 

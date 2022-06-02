@@ -1,0 +1,14 @@
+.layout_wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.nav_wrapper {
+    height: 10%;
+    width: 100%;
+    display: flex;
+}
+
+.main_wrapper {
+    height: 80%;
+}
