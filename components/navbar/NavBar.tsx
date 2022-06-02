@@ -23,12 +23,13 @@ export function NavBar(): React.ReactElement {
                 </div>
                 <ul className={classes.nav_list}>
                     {links.map((link, index) => (
-                        <Link 
-                        key={index}
-                        href="/"
-                        >
-                            {link.display}
-                        </Link>
+                        <li key={index} className={classes.nav_listitem_link}>
+                            <Link 
+                            href="/"
+                            >
+                                {link.display}
+                            </Link>
+                        </li>
                     ))}
                 </ul>
             </div>
