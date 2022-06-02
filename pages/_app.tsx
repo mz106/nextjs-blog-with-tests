@@ -1,4 +1,3 @@
-import { ChakraProvider } from '@chakra-ui/react';
 import type { NextPage } from 'next'
 import type { AppProps } from 'next/app'
 

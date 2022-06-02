@@ -1,0 +1,26 @@
+.item_wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 20%;
+}
+
+.article_title {
+    text-align: center;
+}
+
+.img_article {
+    width: 80%;
+    height: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.article_date {
+    text-align: center;
+}
+
+.article_para {
+    width: 80%;
+    margin: 0 auto;
+}
