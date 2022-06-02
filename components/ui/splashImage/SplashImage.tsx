@@ -23,15 +23,5 @@ export default function SplashImage (props: IAppProps) {
       <img src='/images/splash/splash-one.jpg' className={classes.splash_img}/>
     </div>
   );
-}
+};
 
-{/* <Image
-        alt="Concert goer with hands in the shape of a heart"
-        src="/images/splash/splash-one.jpg"
-        layout="responsive"
-        height={90}
-        width={100}
-        // sizes="320 640 750"
-        objectFit="cover"
-        quality={100}
-      /> */}
