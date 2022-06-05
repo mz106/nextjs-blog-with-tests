@@ -4,13 +4,16 @@ import { Fragment } from 'react';
 import ArticleItem from '../articleItem/ArticleItem';
 import classes from './articlelist.module.css';
 
+import { Article } from '../../../lib/features/articles/types';
+
 type Props = {}
 
-const ArticleList = (props: Props) => {
+const ArticleList = ({ articles }: { articles : Array<Article>;}): React.ReactElement => {
+  console.log(articles)
   return (
 
     <div className={classes.wrapper}>
-      {props.articles.map((article, index) => (
+      {articles.map((article: Article, index) => (
             <ArticleItem key={article.id} article={article}/>
         ))}
     </div>
