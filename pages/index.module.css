@@ -1,4 +1,4 @@
-.container {
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -84,9 +84,10 @@
     width: 100%;
     flex-direction: column;
   }
-}
+} */
 
-.wrapper {
-  height: 80vh;
+/* .wrapper {
+  height: 50vh;
   width: 100%;
-}
+  background-color: aqua;
+} */

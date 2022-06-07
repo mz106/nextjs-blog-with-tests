@@ -1,0 +1,9 @@
+.wrapper {
+    background-color: black;
+    color: white;
+    height: 81vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
