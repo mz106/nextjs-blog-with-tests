@@ -9,7 +9,7 @@ import { Article } from '../../../lib/features/articles/types';
 type Props = {}
 
 const ArticleList = ({ articles }: { articles : Array<Article>;}): React.ReactElement => {
-  console.log(articles)
+  
   return (
 
     <div className={classes.wrapper}>

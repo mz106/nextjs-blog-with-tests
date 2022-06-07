@@ -1,20 +1,22 @@
-// import type { Article } from './types';
+import type { Article } from './types';
 
-// export const getAllArticles = async () => {
-//     const uri: string = process.env.NEXT_PUBLIC_FIREBASE_URI
-//     const response = await fetch(uri);
-//     const data = await response.json();
+// export async function getAllArticlesTS(uri: string): Promise<Article[]>{
 
-//     const articles = [];
+export async function getAllArticlesTS() {
+    
+    const uri: string = `https://${process.env.firebase_url}`;
+    const response = await fetch(uri);
+    const data = await response.json();
 
-//     for (const key in data) {
-//         articles.push({
-//             id: key,
-//             ...data[key]
-//         });
-//     };
+    const articles = [];
 
-//     return articles;
-// };
+    for (const key in data) {
+        articles.push({
+            id: key,
+            ...data[key]
+        });
+    };
 
-export {}
+    return articles;
+};
+
