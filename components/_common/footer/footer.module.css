@@ -1,0 +1,7 @@
+.footer_wrapper {
+    display: flex;
+    justify-content: center;
+    height: 5rem;
+    background-color: black;
+    color: white;
+}

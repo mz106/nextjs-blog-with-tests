@@ -1,0 +1,11 @@
+[
+    {
+        "id": "a1",
+        "body": "Nullam posuere ornare finibus. Vivamus condimentum diam ut lectus ultricies scelerisque. In non euismod ligula. Etiam massa sem, aliquam ornare nisl at, vehicula ultrices enim. Suspendisse potenti. Aliquam iaculis pellentesque massa vitae dapibus. Phasellus quis nulla accumsan odio fermentum elementum eget sit amet mauris. Donec eu velit viverra, mattis ligula ut, mattis nibh. Mauris lacus dolor, rutrum sed quam at, bibendum pellentesque felis. In vel enim commodo, suscipit lectus vel, luctus ipsum. Vivamus cursus volutpat sapien, quis fringilla dolor consequat vel.",
+        "date": "2022-06-02",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consectetur ipsum commodo sollicitudin pharetra. Fusce eget eleifend nisi, ac euismod sapien.",
+        "image": "images/articles/article-one.jpg",
+        "isFeatured": true,
+        "title": "Article One"
+    }
+]
