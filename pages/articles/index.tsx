@@ -20,12 +20,6 @@ export default function Articles({articles}: {articles: Array<Article>;}): React
 
 
 export async function getStaticProps() {
-  // let uri;
-  // if(process.env.NODE_ENV === 'development') {
-  //   uri = '../../devArticles.ts' 
-  // } else {
-  //   uri = process.env.NEXT_PUBLIC_FIREBASE_URI;
-  // }
 
   const allArticles = await getAllArticlesTS();
   console.log(allArticles)
