@@ -14,18 +14,12 @@ const ProductsPage = () => {
   const [ productPageDisplay, setProductPageDisplay ] = useState<ProductType[]>([]);
 
   useEffect(() => {
-  
+    console.log("useEffect hit");
    (async () => {
     const allProducts: any = await getProducts();
     setProducts(allProducts);
-    
+    console.log("useEffect iffy: ", products)
    })()
-   
-   if(products) {
-     products.forEach((product: any, index: number) => {
-       console.log(product)
-     })
-   }
 
    const tempArr = [...products];
 
@@ -37,19 +31,17 @@ const ProductsPage = () => {
 
    const displayProducts = tempArr.filter(filterFunction);
    setProductPageDisplay(displayProducts);
+   console.log(productPageDisplay)
   }, []);
 
   
 
   return (
     <div>
-      {/* {products.map((product: any, index: number) => (
-        <div>
-          <p key={index }>{product.id}</p>
-          <img src={product.image} />
-        </div>
-      ))} */}
       <ProductDisplay productPageDisplay={productPageDisplay} />
+      {/* {productPageDisplay.map((product: any) => (
+        <p>{product.id}</p>
+      ))} */}
     </div>
   )
 }

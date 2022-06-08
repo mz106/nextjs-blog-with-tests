@@ -4,9 +4,18 @@ import type { ProductType, ProductProps } from '../../../lib/features/products/t
 
 type Props = {}
 
-const ProductItem = (props: Props) => {
+const ProductItem = ({ 
+    id,
+    title,
+    price,
+    description,
+    category,
+    image,
+    rating,
+ } : ProductType) => {
+     console.log("hello world")
   return (
-    <div>ProductItem</div>
+    <div key={id} >{title}</div>
   )
 }
 

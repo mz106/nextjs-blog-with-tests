@@ -8,7 +8,7 @@ export interface ProductType {
     rating: {
       rate: number,
       count: number
-    }
+    },
   };
   
   export interface ProductProps {
