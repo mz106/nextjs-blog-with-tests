@@ -10,6 +10,10 @@ export interface ProductType {
       count: number
     },
   };
+
+  export interface AllPropuctsProps {
+    allProducts: ProductType[],
+  };
   
   export interface ProductProps {
     productPageDisplay: ProductType[],

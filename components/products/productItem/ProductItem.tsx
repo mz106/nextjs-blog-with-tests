@@ -2,6 +2,8 @@ import React from 'react';
 
 import type { ProductType, ProductProps } from '../../../lib/features/products/types';
 
+import classes from './productitem.module.css';
+
 type Props = {}
 
 const ProductItem = ({ 
@@ -15,7 +17,7 @@ const ProductItem = ({
  } : ProductType) => {
      console.log("hello world")
   return (
-    <div key={id} >{title}</div>
+    <div key={id} className={classes.wrapper} >{title}</div>
   )
 }
 
