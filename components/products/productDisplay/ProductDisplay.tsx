@@ -1,21 +1,20 @@
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import ProductItem from '../productItem/ProductItem';
 
-import type { ProductType, ProductProps } from '../../../lib/features/products/types';
+import type { ProductType, ProductsProps } from '../../../lib/features/products/types';
 
 import classes from './productdisplay.module.css';
 
 type Props = {}
 
-const ProductDisplay = ({ productPageDisplay }: ProductProps) => {
-    
+const ProductDisplay = ({ filteredProductProps, allProducts }: ProductsProps) => {
+  
   return (
     <div className={classes.product_display_wrapper}>
-        <h1>Product Display</h1>
         <div className={classes.inner_wrapper}>
-            {productPageDisplay.map((product: ProductType, index: number) => (
+            {filteredProductProps.map((product: ProductType, index: number) => (
                 <ProductItem 
                 id={product.id}
                 title={product.title}
@@ -24,6 +23,7 @@ const ProductDisplay = ({ productPageDisplay }: ProductProps) => {
                 category={product.category}
                 image={product.image}
                 rating={product.rating} 
+                key={product.id}
                 />
             ))}
         </div>

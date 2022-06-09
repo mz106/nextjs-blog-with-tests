@@ -11,10 +11,11 @@ export interface ProductType {
     },
   };
 
-  export interface AllPropuctsProps {
+  export interface ProductsProps {
     allProducts: ProductType[],
+    filteredProductProps: ProductType[],
   };
   
-  export interface ProductProps {
-    productPageDisplay: ProductType[],
-  };
+  // export interface FilteredProductProps {
+  //   filteredProductProps: ProductType[],
+  // };

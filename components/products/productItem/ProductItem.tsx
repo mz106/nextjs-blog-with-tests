@@ -1,6 +1,6 @@
 import React from 'react';
 
-import type { ProductType, ProductProps } from '../../../lib/features/products/types';
+import type { ProductType } from '../../../lib/features/products/types';
 
 import classes from './productitem.module.css';
 
@@ -15,7 +15,7 @@ const ProductItem = ({
     image,
     rating,
  } : ProductType) => {
-     console.log("hello world")
+    
   return (
     <div key={id} className={classes.wrapper} >{title}</div>
   )
