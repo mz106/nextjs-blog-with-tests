@@ -8,9 +8,14 @@ export interface ProductType {
     rating: {
       rate: number,
       count: number
-    }
+    },
+  };
+
+  export interface ProductsProps {
+    allProducts: ProductType[],
+    filteredProductProps: ProductType[],
   };
   
-  export interface ProductProps {
-    productPageDisplay: ProductType[],
-  };
+  // export interface FilteredProductProps {
+  //   filteredProductProps: ProductType[],
+  // };

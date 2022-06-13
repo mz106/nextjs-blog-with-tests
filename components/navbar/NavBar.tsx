@@ -8,11 +8,11 @@ import classes from "./navbar.module.css";
 export function NavBar(): React.ReactElement {
 
     const links = [
-        { display: 'All Articles' },
-        { display: 'Search' },
-        { display: 'Shop'}
+        { display: 'All Articles', path: "/" },
+        { display: 'Search' , path: "/"},
+        { display: 'Shop', path: "/products"}
     ];
-
+    
     return (
         <div className={classes.container_nav}>
             <div className={classes.container_nav_inner}>
@@ -25,7 +25,7 @@ export function NavBar(): React.ReactElement {
                     {links.map((link, index) => (
                         <li key={index} className={classes.nav_listitem_link}>
                             <Link 
-                            href="/"
+                            href={link.path}
                             >
                                 {link.display}
                             </Link>

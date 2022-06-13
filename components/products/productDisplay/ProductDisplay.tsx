@@ -1,16 +1,33 @@
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
-import type { ProductType, ProductProps } from '../../../lib/features/products/types';
+import ProductItem from '../productItem/ProductItem';
+
+import type { ProductType, ProductsProps } from '../../../lib/features/products/types';
+
+import classes from './productdisplay.module.css';
 
 type Props = {}
 
-const ProductDisplay = ({ productPageDisplay }: ProductProps) => {
-    console.log(productPageDisplay)
+const ProductDisplay = ({ filteredProductProps, allProducts }: ProductsProps) => {
+  
   return (
-    <div>{productPageDisplay.map((product: any) => (
-        <p>{product.id}</p>
-    ))}</div>
+    <div className={classes.product_display_wrapper}>
+        <div className={classes.inner_wrapper}>
+            {filteredProductProps.map((product: ProductType, index: number) => (
+                <ProductItem 
+                id={product.id}
+                title={product.title}
+                price={product.price}
+                description={product.description}
+                category={product.category}
+                image={product.image}
+                rating={product.rating} 
+                key={product.id}
+                />
+            ))}
+        </div>
+    </div>
   )
 }
 
