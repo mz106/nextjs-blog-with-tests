@@ -1,3 +1,4 @@
+import { ClassNames } from '@emotion/react';
 import React from 'react';
 
 import type { ProductType } from '../../../lib/features/products/types';
@@ -17,7 +18,13 @@ const ProductItem = ({
  } : ProductType) => {
     
   return (
-    <div key={id} className={classes.wrapper} >{title}</div>
+    <div className={classes.wrapper} >
+      <li className={classes.img_wrapper}>
+        <img src={image} className={classes.item_img} />
+      </li>
+      <li className={classes.list_item}>{title}</li>
+      <button>View</button>
+    </div>
   )
 }
 
