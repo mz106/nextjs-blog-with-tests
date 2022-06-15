@@ -1,4 +1,4 @@
-import { ClassNames } from '@emotion/react';
+
 import React from 'react';
 
 import Button from '@/components/ui/button/Button';
@@ -23,6 +23,11 @@ const ProductItem = ({
     console.log("click handler reached");
   };
     
+  const productLink = {
+    url: `/products/${id}`,
+    productId: id,
+  };
+
   return (
     <div className={classes.wrapper} >
       <li className={classes.img_wrapper}>
@@ -30,7 +35,7 @@ const ProductItem = ({
       </li>
       <li className={classes.list_item}>{title}</li>
       {/* <button>View</button> */}
-      <Button handler={clickHandler} />
+      <Button link={productLink}>View</Button>
     </div>
   )
 }

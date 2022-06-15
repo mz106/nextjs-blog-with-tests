@@ -9,7 +9,7 @@ import classes from './productdisplay.module.css';
 
 type Props = {}
 
-const ProductDisplay = ({ filteredProductProps, allProducts }: ProductsProps) => {
+const ProductDisplay = ({ filteredProductProps }: ProductsProps) => {
   
   return (
     <div className={classes.product_display_wrapper}>

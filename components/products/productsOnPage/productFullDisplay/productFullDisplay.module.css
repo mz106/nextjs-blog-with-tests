@@ -1,0 +1,19 @@
+.wrapper {
+    height: 80vh;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+}
+
+.product_wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.next_prev_wrapper {
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}

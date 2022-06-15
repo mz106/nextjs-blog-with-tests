@@ -1,7 +1,10 @@
-import React from "react";
+import React, { MouseEventHandler, ReactNode } from 'react';
 
 export interface ButtonProps {
-    link?: string,
-    handler?: Function,
-    children?: React.ReactNode, 
+    link?: {
+        url: string,
+        productId: number,
+    },
+    handler?: MouseEventHandler,
+    children?: ReactNode, 
 };

@@ -9,7 +9,7 @@ const Button = ({ link, handler, children } : ButtonProps) => {
 
   if(link) {
       return (
-        <Link href={link}>
+        <Link href={link.url}>
             <a>{children}</a>
         </Link>
       );

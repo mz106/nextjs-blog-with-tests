@@ -16,6 +16,12 @@ export interface ProductType {
     filteredProductProps: ProductType[],
   };
   
+  export interface GroupProductProps {
+    product: ProductType,
+    nextProduct: ProductType,
+    prevProduct: ProductType,
+  };
+
   // export interface FilteredProductProps {
   //   filteredProductProps: ProductType[],
   // };
