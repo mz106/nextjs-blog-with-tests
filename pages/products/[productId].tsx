@@ -27,7 +27,7 @@ export async function getStaticProps(context: any) {
     const productId: string = context.params.productId;
 
     const response = await fetch(`https://fakestoreapi.com/products/${productId}`);
-    const responsePrev = await parseInt(productId) - 1 <= 0 ? null : await fetch(`https://fakestoreapi.com/products/${(parseInt(productId) -1 ).toString()}`);
+    const responsePrev = await parseInt(productId) - 1 < 1 ? null : await fetch(`https://fakestoreapi.com/products/${(parseInt(productId) -1 ).toString()}`);
     const responseNext = await parseInt(productId) + 1 > 20 ? null : await fetch(`https://fakestoreapi.com/products/${(parseInt(productId) +1 ).toString()}`);
     
     const product: ProductType = await response.json();
