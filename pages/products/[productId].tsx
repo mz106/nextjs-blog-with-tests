@@ -27,12 +27,47 @@ export async function getStaticProps(context: any) {
     const productId: string = context.params.productId;
 
     const response = await fetch(`https://fakestoreapi.com/products/${productId}`);
-    const responsePrev = await parseInt(productId) - 1 <= 0 ? null : await fetch(`https://fakestoreapi.com/products/${(parseInt(productId) -1 ).toString()}`);
+    console.log(response);
+    const responsePrev = await parseInt(productId) - 1 < 1 ? null : await fetch(`https://fakestoreapi.com/products/${(parseInt(productId) -1 ).toString()}`);
     const responseNext = await parseInt(productId) + 1 > 20 ? null : await fetch(`https://fakestoreapi.com/products/${(parseInt(productId) +1 ).toString()}`);
     
     const product: ProductType = await response.json();
-    const prevProduct: ProductType = await responsePrev?.json();
-    const nextProduct: ProductType = await responseNext?.json();
+    console.log(product)
+    let prevProduct: ProductType;
+    let nextProduct: ProductType
+    if(!responsePrev) {
+        prevProduct = {
+            id: 0,
+            title: '',
+            price: 0,
+            description: '',
+            category: '',
+            image: '',
+            rating: {
+                rate: 0,
+                count: 0
+            }
+        };
+    } else {
+        prevProduct = await responsePrev?.json();
+    }
+
+    if(!responseNext) {
+        nextProduct = {
+            id: 0,
+            title: '',
+            price: 0,
+            description: '',
+            category: '',
+            image: '',
+            rating: {
+                rate: 0,
+                count: 0
+            }
+        }
+    } else {
+        nextProduct = await responseNext?.json();
+    }
     
     return {
         props: {
